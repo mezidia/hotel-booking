@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace bd_project
+namespace booking_project
 {
     class Program
     {
