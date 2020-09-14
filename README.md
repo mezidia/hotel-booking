@@ -1,5 +1,5 @@
-# Hotel-Booking-project
-Our hotel-booking project with databases
+# Hotel Booking Project
+Our hotel booking project with databases
 
 ## Table of Contents
 
@@ -17,7 +17,6 @@ Our hotel-booking project with databases
 - [Horbunova Yelyzaveta](https://github.com/lizardlynx)
 - [Palchyk Maksym](https://github.com/La7rodectus)
 - [Sichkar Tetiana](https://github.com/fhrr-sht)
-
 
 ## Creation date
 7.09.2020
