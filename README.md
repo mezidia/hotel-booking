@@ -6,7 +6,7 @@ Our hotel-booking project with databases
 - [Description](#description)
 - [Badges](#badges)
 - [Team](#team)
-- [History-Of-Changes](#history-Of-Changes)
+- [History-Of-Changes](#history-of-changes)
 - [License](#license)
 
 ## History-Of-Changes
