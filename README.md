@@ -1,2 +1,2 @@
-# Booking-project
-Our booking project with databases
+# Hotel-Booking-project
+Our hotel-booking project with databases
