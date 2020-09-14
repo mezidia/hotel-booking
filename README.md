@@ -12,3 +12,6 @@ Our hotel-booking project with databases
 ## History-Of-Changes
 
 0.0.1v - add starting project
+
+## License
+MIT © @mezidia
