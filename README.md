@@ -6,7 +6,7 @@ Our hotel-booking project with databases
 - [Description](#description)
 - [Badges](#badges)
 - [Team](#team)
-- [History-Of-Changes](https://github.com/mezidia/hotel-booking/blob/master/CHANGELOG.md)
+- [History Of Changes](https://github.com/mezidia/hotel-booking/blob/master/CHANGELOG.md)
 - [License](#license)
 
 ## Creation date
