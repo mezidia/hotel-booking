@@ -20,3 +20,4 @@ jobs:
         env:
           VALIDATE_ALL_CODEBASE: true
           VALIDATE_CSHARP: true
+          VALIDATE_MD: true
