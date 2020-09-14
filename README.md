@@ -14,4 +14,4 @@ Our hotel-booking project with databases
 0.0.1v - add starting project
 
 ## License
-MIT © @mezidia
+MIT © [mezidia](https://github.com/mezidia)
