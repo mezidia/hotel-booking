@@ -20,7 +20,7 @@ Below is given a list of parties, that may be interested in our project:
 - [Zavalniuk Maksym](https://github.com/mezgoodle)
 - [Dominskyi Valentyn](https://github.com/VsIG-official)
 - [Dmytrenko Roman](https://github.com/Dmytrenko-Roman)
-- [Horbunova Yelyzaveta](https://github.com/lizardlynx)
+- [Gorbunova Yelyzaveta](https://github.com/lizardlynx)
 - [Palchyk Maksym](https://github.com/La7rodectus)
 - [Sichkar Tetiana](https://github.com/fhrr-sht)
 
