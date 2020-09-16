@@ -4,4 +4,4 @@ dotnet: 3.1
 before_script:
  - dotnet restore
 script:
- - echo "The end."
+ - dotnet test
