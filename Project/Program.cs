@@ -2,11 +2,11 @@
 
 namespace booking_project
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public string Main(string name)
         {
-            Console.WriteLine("Hello World!");
+            return("Hello " + name);
         }
     }
 }
