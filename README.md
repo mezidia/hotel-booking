@@ -24,7 +24,7 @@ Below is given a list of parties, that may be interested in our project:
 - [Palchyk Maksym](https://github.com/La7rodectus)
 - [Sichkar Tetiana](https://github.com/fhrr-sht)
 
-## Database architecture
+## Datab. schema
 ![alt tag](https://i.imgur.com/LcVHHgH.png)
 
 ## Creation date
