@@ -24,6 +24,9 @@ Below is given a list of parties, that may be interested in our project:
 - [Palchyk Maksym](https://github.com/La7rodectus)
 - [Sichkar Tetiana](https://github.com/fhrr-sht)
 
+## Database architecture
+![alt tag](https://i.imgur.com/LcVHHgH.png)
+
 ## Creation date
 7.09.2020
 
