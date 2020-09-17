@@ -5,6 +5,7 @@ Our hotel booking project with databases
 
 - [Description](#description)
 - [Badges](#badges)
+- [Database schema](#database-schema)
 - [Team](#team)
 - [History of changes](https://github.com/mezidia/hotel-booking/blob/master/CHANGELOG.md)
 - [License](#license)
@@ -24,7 +25,7 @@ Below is given a list of parties, that may be interested in our project:
 - [Palchyk Maksym](https://github.com/La7rodectus)
 - [Sichkar Tetiana](https://github.com/fhrr-sht)
 
-## Datab. schema
+## Database schema
 ![alt tag](https://i.imgur.com/LcVHHgH.png)
 
 ## Creation date
