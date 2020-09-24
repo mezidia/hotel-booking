@@ -5,8 +5,9 @@ Our hotel booking project with databases
 
 - [Description](#description)
 - [Badges](#badges)
-- [Database schema](#database-schema)
+- [Interested parties](#interested-parties)
 - [Team](#team)
+- [Database schema](#database-schema)
 - [History of changes](https://github.com/mezidia/hotel-booking/blob/master/CHANGELOG.md)
 - [License](#license)
 
