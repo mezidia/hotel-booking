@@ -13,12 +13,12 @@ Our hotel booking project with databases
 
 ## Functionality
 
- Customers can search based on hotel, apartment, inns 
- When a customer search for hotels, apartment, and the search result must contain hotel or 
-apartment information (Address, Ratings, and Price) and also its availability within 
-choosing check in and check out date. 
+ Customers can search based on hotel, apartment, inns
+ When a customer search for hotels, apartment, and the search result must contain hotel or
+apartment information (Address, Ratings, and Price) and also its availability within
+choosing check in and check out date.
  Customers able to cancel their booking from their account.
- Staffs able to edit customers booking information (updating check in, check out, room 
+ Staffs able to edit customers booking information (updating check in, check out, room
 preferences, bed preferences and also cancelling booking).
  Customers can book online and pay with credit or debit card.
  The system must send booking confirmation email after successful payment.
@@ -27,15 +27,15 @@ preferences, bed preferences and also cancelling booking).
  Customers can send feedback or call the company for booking purposes.
  Customers can check for latest promotion or deal.
  The system must provide customers 24*7 hours online booking service.
- The system should support almost all the browsers (Internet Explorer, Safari, Chrome, 
+ The system should support almost all the browsers (Internet Explorer, Safari, Chrome,
 and Firefox).
- System should send the newsletter about ongoing promotions or deal to registered 
+ System should send the newsletter about ongoing promotions or deal to registered
 customers.
 
-## Interested parties  
-Below is given a list of parties, that may be interested in our project:  
+## Interested parties
+Below is given a list of parties, that may be interested in our project:
 
-- People, who are searching for a bed, a room or a flat to stay for some period of time;  
+- People, who are searching for a bed, a room or a flat to stay for some period of time;
 - Hotels, which are looking for customers.
 
 ## Team
