@@ -54,7 +54,8 @@ Below is given a list of parties, that may be interested in our project:
 7.09.2020
 
 ## Badges
-
+https://img.shields.io/badge/Theme-Data--Bases-red?style=flat-square
+https://img.shields.io/badge/Team-Mezidia-brightgreen?style=flat-square
 
 ## License
 MIT © [mezidia](https://github.com/mezidia)
