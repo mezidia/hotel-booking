@@ -13,23 +13,23 @@ Our hotel booking project with databases
 
 ## Functionality
 
- Customers can search based on hotel, apartment, inns
- When a customer search for hotels, apartment, and the search result must contain hotel or
+- Customers can search based on hotel, apartment, inns
+- When a customer search for hotels, apartment, and the search result must contain hotel or
 apartment information (Address, Ratings, and Price) and also its availability within
 choosing check in and check out date.
- Customers able to cancel their booking from their account.
- Staffs able to edit customers booking information (updating check in, check out, room
+- Customers able to cancel their booking from their account.
+- Staffs able to edit customers booking information (updating check in, check out, room
 preferences, bed preferences and also cancelling booking).
- Customers can book online and pay with credit or debit card.
- The system must send booking confirmation email after successful payment.
- Customers can write reviews about hotels and apartment and also rate them.
- Customers able to check their booking status from their individual account.
- Customers can send feedback or call the company for booking purposes.
- Customers can check for latest promotion or deal.
- The system must provide customers 24*7 hours online booking service.
- The system should support almost all the browsers (Internet Explorer, Safari, Chrome,
+- Customers can book online and pay with credit or debit card.
+- The system must send booking confirmation email after successful payment.
+- Customers can write reviews about hotels and apartment and also rate them.
+- Customers able to check their booking status from their individual account.
+- Customers can send feedback or call the company for booking purposes.
+- Customers can check for latest promotion or deal.
+- The system must provide customers 24*7 hours online booking service.
+- The system should support almost all the browsers (Internet Explorer, Safari, Chrome,
 and Firefox).
- System should send the newsletter about ongoing promotions or deal to registered
+- System should send the newsletter about ongoing promotions or deal to registered
 customers.
 
 ## Interested parties
