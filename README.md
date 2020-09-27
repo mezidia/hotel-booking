@@ -3,8 +3,7 @@ Our hotel booking project with databases
 
 ## Table of Contents
 
-- [Description](#description)
-- [Badges](#badges)
+- [Functionality](#functionality)
 - [Interested parties](#interested-parties)
 - [Team](#team)
 - [Database schema](#database-schema)
