@@ -8,6 +8,7 @@ Our hotel booking project with databases
 - [Team](#team)
 - [Database schema](#database-schema)
 - [History of changes](https://github.com/mezidia/hotel-booking/blob/master/CHANGELOG.md)
+- [Badges](#badges)
 - [License](#license)
 
 ## Functionality
@@ -51,6 +52,9 @@ Below is given a list of parties, that may be interested in our project:
 
 ## Creation date
 7.09.2020
+
+## Badges
+
 
 ## License
 MIT © [mezidia](https://github.com/mezidia)
