@@ -3,6 +3,9 @@ Our hotel booking project with databases
 
 ## Table of Contents
 
+- [Introduction](#introduction)
+  - [Goal](#goal)
+  - [Context](#context)
 - [Functionality](#functionality)
 - [Interested parties](#interested-parties)
 - [Team](#team)
@@ -10,6 +13,19 @@ Our hotel booking project with databases
 - [History of changes](https://github.com/mezidia/hotel-booking/blob/master/CHANGELOG.md)
 - [Badges](#badges)
 - [License](#license)
+
+## Introduction
+
+Nowadays, number of tourists are growing fast. And hotel reservations are always relevant and necessary for people. Therefore, we want to develop a convenient database with useful information and rich functionality.
+
+### Goal
+
+- make information about hotels more public and smart
+- make booking a room more easy
+
+### Context
+
+The user can easily book a room without seeing unnecessary information, only useful. Everything related to the booking will be notified to the user via email
 
 ## Functionality
 
