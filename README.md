@@ -13,7 +13,7 @@ Our hotel booking project with databases
 
 ## Introduction
 
-Nowadays, tourists are becoming more and more. And hotel reservations are always relevant and necessary for people. Therefore, we want to develop a convenient database with useful information and rich functionality.
+Nowadays, number of tourists are growing fast. And hotel reservations are always relevant and necessary for people. Therefore, we want to develop a convenient database with useful information and rich functionality.
 
 ### Goal
 
@@ -22,7 +22,7 @@ Nowadays, tourists are becoming more and more. And hotel reservations are always
 
 ### Context
 
-The user can easily book a room without seeing unnecessary information, only necessary. Everything related to the booking will be notified to the user via email
+The user can easily book a room without seeing unnecessary information, only useful. Everything related to the booking will be notified to the user via email
 
 ## Functionality
 
