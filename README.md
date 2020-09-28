@@ -4,8 +4,8 @@ Our hotel booking project with databases
 ## Table of Contents
 
 - [Introduction](#introduction)
-	- [Goal](#goal)
-	- [Context](#context)
+  - [Goal](#goal)
+  - [Context](#context)
 - [Functionality](#functionality)
 - [Interested parties](#interested-parties)
 - [Team](#team)
