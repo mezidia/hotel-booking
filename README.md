@@ -11,6 +11,19 @@ Our hotel booking project with databases
 - [Badges](#badges)
 - [License](#license)
 
+## Introduction
+
+Nowadays, tourists are becoming more and more. And hotel reservations are always relevant and necessary for people. Therefore, we want to develop a convenient database with useful information and rich functionality.
+
+### Goal
+
+- make information about hotels more public and smart
+- make booking a room more easy
+
+### Context
+
+The user can easily book a room without seeing unnecessary information, only necessary. Everything related to the booking will be notified to the user via email
+
 ## Functionality
 
 - Customers can search based on hotel, apartment, inns
