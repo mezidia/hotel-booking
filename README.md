@@ -64,7 +64,7 @@ Below is given a list of parties, that may be interested in our project:
 - [Sichkar Tetiana](https://github.com/fhrr-sht)
 
 ## Database schema
-![alt tag](https://i.imgur.com/w8WLdtK.png)
+![alt tag](https://i.imgur.com/HRdFURn.png)
 
 ## Creation date
 7.09.2020
