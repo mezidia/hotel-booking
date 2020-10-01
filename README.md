@@ -27,6 +27,24 @@ Nowadays, number of tourists are growing fast. And hotel reservations are always
 
 The user can easily book a room without seeing unnecessary information, only useful. Everything related to the booking will be notified to the user via email
 
+## Characteristics of business processes
+
+### Purpose of the system
+
+Hotel Booking DB was created to facilitate the operation of online hotel reservation systems. The database will help your program or site to store all the necessary information correctly, securely and in a structured way. This system will have the function of notifying users via email as well as many other useful functions.
+
+### Interaction with users
+
+Interaction with the database occurs through certain functions that return the desired values or perform certain operations. By connecting Hotel Booking DB to your project, your users will be able to quickly view the hotels or reservations they need, leave a review of their favorite place to stay or add their own small motel. The registration system will include a login, password and e-mail.
+
+### Characteristics of business relations
+
+System management will be performed using a separate application section (for administrators only) and using a special administration team consisting of administrators and system operators. Users who have added their property to the database will be able to change the parameters of their proposals after the previous moderation.
+
+### Target audience
+
+The target audience of Hotel Booking DB is the developers of any hotel room reservation system.
+
 ## Functionality
 
 - Customers can search based on hotel, apartment, inns
