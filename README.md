@@ -83,6 +83,9 @@ Hotel Booking DB is available for everyone, who will install our module and conn
 It has no UI yet, but connection to the server is available with the use of English and letters from us coming to your email can be different, depending on the language you choose (English, Russian, Ukrainian).  
 We provide "help" command, which helps user to understand functionality of DB.
 
+## Reliability
+The reliability of this project will be extremely high, because the main language for implementing the database in it is C#, which is an OOP language. It allows you to make the data of all users strictly classified. Also, the data will be saved on the servers, which will allow you to restore them if necessary.
+
 ## Team
 
 - [Zavalniuk Maksym](https://github.com/mezgoodle)
