@@ -4,19 +4,20 @@ Our hotel booking project with databases
 ## Table of Contents
 
 - [Introduction](#introduction)
-  - [Goal](#goal)
-  - [Context](#context)
-- [Characteristics of business relations](#characteristics-of-business-relations)
-  - [Purpose of the system](#purpose-of-the-system)
-  - [Interaction with users](#interaction-with-users)
-  - [Characteristics of business relations](#characteristics-of-business-relations)
-  - [Target audience](#target-audience)
+    - [Goal](#goal)
+    - [Context](#context)
+- [Characteristics of business processes](#characteristics-of-business-processes)
+    - [Purpose of the system](#purpose-of-the-system)
+    - [Interaction with users](#interaction-with-users)
+    - [Characteristics of business relations](#characteristics-of-business-relations)
+    - [Target audience](#target-audience)
 - [Functionality](#functionality)
 - [Interested parties](#interested-parties)
 - [Availability](#availability)
+- [Reliability](#reliability)
 - [Team](#team)
 - [Database schema](#database-schema)
-- [History of changes](https://github.com/mezidia/hotel-booking/blob/master/CHANGELOG.md)
+- [Creation date](#creation-date)
 - [Badges](#badges)
 - [License](#license)
 
@@ -78,7 +79,7 @@ Below is given a list of parties, that may be interested in our project:
 - People, who are searching for a bed, a room or a flat to stay for some period of time;
 - Hotels, which are looking for customers.
 
-## Availability  
+## Availability
 Hotel Booking DB is available for everyone, who will install our module and connect it to their own project.  
 It has no UI yet, but connection to the server is available with the use of English and letters from us coming to your email can be different, depending on the language you choose (English, Russian, Ukrainian).  
 We provide "help" command, which helps user to understand functionality of DB.
