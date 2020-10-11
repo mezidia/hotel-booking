@@ -59,13 +59,13 @@ System management will be performed using a separate application section (for ad
 The target audience of Hotel Booking DB is the developers of any hotel room reservation system.
 
 ## Functionality
-#Unauthorized users can
+### Unauthorized users can
 - Search based on hotel, apartment, inn etc for info (Address, Ratings, and Price);
 - Check available rooms
 - Check for latest promotion and deals
 - Sign up, log in
 
-#Authorized users can
+### Authorized users can
 - Book online, pay with credit or debit card
 - See check in and check out dates
 - Leave comments and reviews, rate services
@@ -74,7 +74,7 @@ The target audience of Hotel Booking DB is the developers of any hotel room rese
 - Report comments
 - Log out
 
-#Admins can
+### Admins can
 - Edit customers booking information (updating check in, check out, room preferences, bed preferences and also cancelling booking).
 - Update hotel info and prices
 ## Interested parties
