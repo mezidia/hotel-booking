@@ -6,6 +6,7 @@ Our hotel booking project with databases
 - [Introduction](#introduction)
     - [Goal](#goal)
     - [Context](#context)
+- [Description](#description)
 - [Characteristics of business processes](#characteristics-of-business-processes)
     - [Purpose of the system](#purpose-of-the-system)
     - [Interaction with users](#interaction-with-users)
@@ -24,6 +25,10 @@ Our hotel booking project with databases
 ## Introduction
 
 Nowadays, number of tourists are growing fast. And hotel reservations are always relevant and necessary for people. Therefore, we want to develop a convenient database with useful information and rich functionality.
+
+### Description
+
+Boking is a convenient way for any traveler to order a room in any part of the world without any problems. Users will be able to view each hotel and room in it to choose the most suitable option to make their trip abroad or around the country impeccable.
 
 ### Goal
 
