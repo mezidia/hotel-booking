@@ -4,4 +4,4 @@
 - add starting project
 
 0.0.2v alpha (11.10.2020)
-- add files for tests, business layers, info about ptoject and etc
+- add files for tests, business layers, info about ptoject and ... a lot of .js files!?
