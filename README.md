@@ -28,7 +28,7 @@ Nowadays, number of tourists are growing fast. And hotel reservations are always
 
 ### Description
 
-Boking is a convenient way for any traveler to order a room in any part of the world without any problems. Users will be able to view each hotel and room in it to choose the most suitable option to make their trip abroad or around the country impeccable.
+Booking is an online travel agency for lodging reservations or, in other words, is a convenient way for any traveler to order a room in any part of the world without any problems. Users will be able to view each hotel and room in it to choose the most suitable option to make their trip abroad or around the country impeccable.
 
 ### Goal
 
