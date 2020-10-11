@@ -53,26 +53,24 @@ System management will be performed using a separate application section (for ad
 The target audience of Hotel Booking DB is the developers of any hotel room reservation system.
 
 ## Functionality
+#Unauthorized users can
+- Search based on hotel, apartment, inn etc for info (Address, Ratings, and Price);
+- Check available rooms
+- Check for latest promotion and deals
+- Sign up, log in
 
-- Customers can search based on hotel, apartment, inns
-- When a customer search for hotels, apartment, and the search result must contain hotel or
-apartment information (Address, Ratings, and Price) and also its availability within
-choosing check in and check out date.
-- Customers able to cancel their booking from their account.
-- Staffs able to edit customers booking information (updating check in, check out, room
-preferences, bed preferences and also cancelling booking).
-- Customers can book online and pay with credit or debit card.
-- The system must send booking confirmation email after successful payment.
-- Customers can write reviews about hotels and apartment and also rate them.
-- Customers able to check their booking status from their individual account.
-- Customers can send feedback or call the company for booking purposes.
-- Customers can check for latest promotion or deal.
-- The system must provide customers 24*7 hours online booking service.
-- The system should support almost all the browsers (Internet Explorer, Safari, Chrome,
-and Firefox).
-- System should send the newsletter about ongoing promotions or deal to registered
-customers.
+#Authorized users can
+- Book online, pay with credit or debit card
+- See check in and check out dates
+- Leave comments and reviews, rate services
+- Cancel booking
+- Receive emails about discounts and order updates
+- Report comments
+- Log out
 
+#Admins can
+- Edit customers booking information (updating check in, check out, room preferences, bed preferences and also cancelling booking).
+- Update hotel info and prices
 ## Interested parties
 Below is given a list of parties, that may be interested in our project:
 
