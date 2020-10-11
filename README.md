@@ -19,6 +19,7 @@ Our hotel booking project with databases
 - [Team](#team)
 - [Database schema](#database-schema)
 - [Creation date](#creation-date)
+- [Change Log](#change-log)
 - [Badges](#badges)
 - [License](#license)
 
@@ -104,6 +105,9 @@ The reliability of this project will be extremely high, because the main languag
 
 ## Creation date
 7.09.2020
+
+## Change Log
+[Change Log](https://github.com/mezidia/hotel-booking/blob/master/CHANGELOG.md)
 
 ## Badges
 > [![Theme](https://img.shields.io/badge/Theme-DataBases-red?style=flat-square)](https://en.wikipedia.org/wiki/Database)
