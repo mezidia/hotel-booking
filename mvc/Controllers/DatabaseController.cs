@@ -9,7 +9,7 @@ using mvc.Models;
 
 namespace mvc.Controllers
 {
-    public class HelloWorldController : Controller
+    public class DatabaseController : Controller
     {
         // 
         // GET: /HelloWorld/
