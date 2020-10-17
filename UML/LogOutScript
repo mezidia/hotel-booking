@@ -1,0 +1,24 @@
+@startuml
+left header
+<font color=000 size=18><b>Package:</b> Authorized user.
+<font color=000 size=16><b>ID:</b> UC_11
+<font color=000 size=16><b>Name:</b> Log out.
+<font color=000 size=16><b>Participants:</b> Authorized user, System.
+<font color=000 size=16><b>Conditions:</b> User is authorized.
+<font color=000 size=16><b>Result:</b> User Logged out.
+
+<font color=000 size=16><b>Main scenario:</b>
+
+end header
+|Authorized user|
+start
+:User presses button "Log out";
+|System|
+:System asks for confirmation
+"Are you sure to log out?";
+|Authorized user|
+:User presses button "Yes";
+|System|
+:System logs out User;
+stop
+@enduml
