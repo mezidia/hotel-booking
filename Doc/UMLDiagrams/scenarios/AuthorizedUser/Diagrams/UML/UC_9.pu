@@ -1,0 +1,23 @@
+@startuml
+left header
+<font color=000 size=18><b>Package:</b> Authorized user.
+<font color=000 size=16><b>ID:</b> UC_9
+<font color=000 size=16><b>Name:</b> Update hotel info and prices.
+<font color=000 size=16><b>Participants:</b> Authorized user, System.
+<font color=000 size=16><b>Conditions:</b> User owns hotel.
+<font color=000 size=16><b>Result:</b> Changed info or prices.
+
+<font color=000 size=16><b>Main scenario:</b>
+
+end header
+|Authorized user|
+start
+:User pushes button "Update hotel info";
+|System|
+:System gets id of hotel and sends it's description;
+|Authorized user|
+:User changes description or price and taps button "Submit";
+|System|
+:System gets information and changes it in database;
+stop
+@enduml
