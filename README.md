@@ -73,10 +73,14 @@ The target audience of Hotel Booking DB is the developers of any hotel room rese
 - Receive emails about discounts and order updates
 - Report comments
 - Log out
+- Edit customers booking information (updating check in, check out, room preferences, bed preferences and also cancelling booking)(for hotel admins only)
+- Update hotel info and prices(for hotel admins only)
 
 ### Admins can
-- Edit customers booking information (updating check in, check out, room preferences, bed preferences and also cancelling booking).
-- Update hotel info and prices
+- Ban users or hotels;
+- Content moderation;
+- Users support.
+
 ## Interested parties
 Below is given a list of parties, that may be interested in our project:
 
