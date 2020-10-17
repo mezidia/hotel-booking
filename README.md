@@ -77,7 +77,7 @@ The target audience of Hotel Booking DB is the developers of any hotel room rese
 - Update hotel info and prices(for hotel admins only)
 
 ### Admins can
-- Ban users or hotels;
+- Change permissions for users or hotels;
 - Content moderation;
 - Users support.
 
