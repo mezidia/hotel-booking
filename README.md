@@ -66,8 +66,8 @@ The target audience of Hotel Booking DB is the developers of any hotel room rese
 - [Sign up, log in](https://github.com/mezidia/hotel-booking/blob/master/docs/UnauthorizedUserSignUpLogIn.png)
 
 ### Authorized users can
-- Book online, pay with credit or debit card
-- See check in and check out dates
+- [Book online, pay with credit or debit card](https://github.com/mezidia/hotel-booking/blob/master/docs/AuthorizedUserBooking.png)
+- [See check in and check out dates](https://github.com/mezidia/hotel-booking/blob/master/docs/AuthorizedUserCheckDates.png)
 - Leave comments and reviews, rate services
 - Cancel booking
 - Receive emails about discounts and order updates
