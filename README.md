@@ -77,9 +77,9 @@ The target audience of Hotel Booking DB is the developers of any hotel room rese
 - [Update hotel info and prices (for hotel admins only)](https://github.com/mezidia/hotel-booking/blob/master/docs/AuthorizedUserUpdateInfo.png)
 
 ### Admins can
-- Change permissions for users or hotels;
-- Content moderation;
-- Users support.
+- [Change permissions for users or hotels](https://github.com/mezidia/hotel-booking/blob/master/docs/AdminChangePermissions.png.png)
+- [Content moderation](https://github.com/mezidia/hotel-booking/blob/master/docs/AdminModerateContent.png)
+- [Users support](https://github.com/mezidia/hotel-booking/blob/master/docs/AdminSupport.png)
 
 ## Interested parties
 Below is given a list of parties, that may be interested in our project:
