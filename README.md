@@ -68,9 +68,9 @@ The target audience of Hotel Booking DB is the developers of any hotel room rese
 ### Authorized users can
 - [Book online, pay with credit or debit card](https://github.com/mezidia/hotel-booking/blob/master/docs/AuthorizedUserBooking.png)
 - [See check in and check out dates](https://github.com/mezidia/hotel-booking/blob/master/docs/AuthorizedUserCheckDates.png)
-- Leave comments and reviews, rate services
-- Cancel booking
-- Receive emails about discounts and order updates
+- [Leave comments and reviews, rate services](https://github.com/mezidia/hotel-booking/blob/master/docs/AuthorizedUserReview.png)
+- [Cancel booking](https://github.com/mezidia/hotel-booking/blob/master/docs/AuthorizedUserCancel.png)
+- [Receive emails about discounts and order updates](https://github.com/mezidia/hotel-booking/blob/master/docs/AuthorizedUserOrderUpdates.png)
 - Report comments
 - Log out
 - Edit customer's booking information (updating check in, check out, room preferences, bed preferences and also cancelling booking)(for hotel admins only)
