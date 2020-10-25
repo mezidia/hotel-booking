@@ -60,10 +60,10 @@ The target audience of Hotel Booking DB is the developers of any hotel room rese
 
 ## Functionality
 ### Unauthorized users can
-- Search based on hotel, apartment, inn etc for info (Address, Ratings, and Price);
-- Check available rooms
-- Check for latest promotion and deals
-- Sign up, log in
+- [Search based on hotel, apartment, inn etc for info (Address, Ratings, and Price)](https://github.com/mezidia/hotel-booking/blob/master/docs/SearchForInfo.png)
+- [Check available rooms](https://github.com/mezidia/hotel-booking/blob/master/docs/CheckAvailableRooms.png)
+- [Check for latest promotion and deals](https://github.com/mezidia/hotel-booking/blob/master/docs/CheckForDeals.png)
+- [Sign up, log in](https://github.com/mezidia/hotel-booking/blob/master/docs/UnauthorizedUserSignUpLogIn.png)
 
 ### Authorized users can
 - Book online, pay with credit or debit card
