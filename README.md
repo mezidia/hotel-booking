@@ -74,7 +74,7 @@ The target audience of Hotel Booking DB is the developers of any hotel room rese
 - Report comments
 - Log out
 - Edit customer's booking information (updating check in, check out, room preferences, bed preferences and also cancelling booking)(for hotel admins only)
-- Update hotel info and prices(for hotel admins only)
+- [Update hotel info and prices(for hotel admins only)](https://github.com/mezidia/hotel-booking/blob/master/docs/AuthorizedUserUpdateInfo.png)
 
 ### Admins can
 - Change permissions for users or hotels;
