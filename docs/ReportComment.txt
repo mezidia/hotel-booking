@@ -1,0 +1,24 @@
+@startuml
+left header
+<font color=000 size=18><b>Package:</b> Authorized user.
+<font color=000 size=16><b>ID:</b> UC_10
+<font color=000 size=16><b>Name:</b> Report comments.
+<font color=000 size=16><b>Participants:</b> Authorized user, System.
+<font color=000 size=16><b>Conditions:</b> User reports a comment.
+<font color=000 size=16><b>Result:</b> Send report to Admin and save data to DB.
+
+<font color=000 size=16><b>Main scenario:</b>
+
+end header
+|Authorized user|
+start
+:User presses button "Report comment" on a comment;
+|System|
+:System opens "Report options" dialog window; 
+|Authorized user|
+:User chooses report option;
+|System|
+:System sends notification to Admin;
+:System saves report in DB;
+stop
+@enduml

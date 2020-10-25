@@ -1,0 +1,25 @@
+@startuml
+left header
+<font color=000 size=18><b>Package:</b> Authorized user.
+<font color=000 size=16><b>ID:</b> UC_12
+<font color=000 size=16><b>Name:</b> Edit booking information.
+<font color=000 size=16><b>Participants:</b> Authorized user, System.
+<font color=000 size=16><b>Conditions:</b> User edits booking details.
+<font color=000 size=16><b>Exceptions:</b> 
+<font color=000 size=16><b>Result:</b> User updated booking details.
+
+<font color=000 size=16><b>Main scenario:</b>
+
+end header
+|Authorized user|
+start
+:User presses button "Edit" on booking;
+|System|
+:System opens page 
+"Edit booking details";
+|Authorized user|
+:User makes changes and submits them;
+|System|
+:System validates and update DB;
+stop
+@enduml
