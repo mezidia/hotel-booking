@@ -81,6 +81,8 @@ The target audience of Hotel Booking DB is the developers of any hotel room rese
 - [Content moderation](https://github.com/mezidia/hotel-booking/blob/master/docs/AdminModerateContent.png)
 - [Users support](https://github.com/mezidia/hotel-booking/blob/master/docs/AdminSupport.png)
 
+### [Table Of Precedents](https://github.com/mezidia/hotel-booking/blob/master/docs/table_of_precedents.jpg)
+
 ## Interested parties
 Below is given a list of parties, that may be interested in our project:
 
