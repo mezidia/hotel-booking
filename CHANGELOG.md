@@ -5,3 +5,6 @@
 
 0.0.2v alpha (11.10.2020)
 - add files for tests, business layers, info about ptoject and ... a lot of .js files!?
+
+0.0.3v alpha (25.10.2020)
+- add diagrams and table of precedents for [functionality](https://github.com/mezidia/hotel-booking#functionality)
