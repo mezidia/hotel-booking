@@ -35,5 +35,3 @@ GO
 
 ALTER TABLE [dbo].[Booking] CHECK CONSTRAINT [FK_Booking_Users]
 GO
-
-

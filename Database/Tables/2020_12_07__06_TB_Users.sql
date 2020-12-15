@@ -31,5 +31,3 @@ GO
 
 ALTER TABLE [dbo].[Users] CHECK CONSTRAINT [FK_Users_Countries]
 GO
-
-

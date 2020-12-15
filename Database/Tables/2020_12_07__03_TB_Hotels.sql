@@ -38,5 +38,3 @@ GO
 
 ALTER TABLE [dbo].[Hotels] CHECK CONSTRAINT [FK_Hotels_Users]
 GO
-
-

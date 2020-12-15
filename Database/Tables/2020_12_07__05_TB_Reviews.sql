@@ -35,5 +35,3 @@ GO
 
 ALTER TABLE [dbo].[Reviews] CHECK CONSTRAINT [FK_Reviews_Users2]
 GO
-
-
