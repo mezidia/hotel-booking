@@ -14,7 +14,7 @@ CREATE PROCEDURE [dbo].[UpdateHotel]
 @HotelID int,
 @Country int,
 @Owner int,
-@Number_of_stars int,
+@NumberOfStars int,
 @Description nvarchar(MAX),
 @Location int,
 @HotelType int,
@@ -28,7 +28,7 @@ BEGIN
 	UPDATE [dbo].[Hotels]
 SET [country_id] = @Country,
 [owner_id] = @Owner,
-[number_of_stars_int] = @Number_of_stars,
+[number_of_stars_int] = @NumberOfStars,
 [description_str] = @Description,
 [location_int] = @Location,
 [hotelType_int] = @HotelType,
