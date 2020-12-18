@@ -13,7 +13,7 @@ GO
 CREATE PROCEDURE [dbo].[SetRoom] 
 @Price int,
 @RoomNumber int,
-@TV int,
+@TV bit,
 @RoomType nvarchar(max),
 @NumberOfBeds int,
 @Balcony bit,
