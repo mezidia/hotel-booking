@@ -13,7 +13,7 @@ GO
 CREATE PROCEDURE [dbo].[SetHotel] 
 @Country int,
 @Owner int,
-@Number_of_stars int,
+@NumberOfStars int,
 @Description nvarchar(MAX),
 @Location int,
 @HotelType int,
@@ -25,6 +25,6 @@ BEGIN
 	-- interfering with SELECT statements.
 	SET NOCOUNT ON;
 INSERT INTO Hotels(country_id, owner_id, number_of_stars_int, description_str, location_int, hotelType_int, rating_int, hotelName_str) 
-VALUES (@Country, @Owner, @Number_of_stars, @Description, @Location, @HotelType, @Rating, @HotelName)
+VALUES (@Country, @Owner, @NumberOfStars, @Description, @Location, @HotelType, @Rating, @HotelName)
 
 END
