@@ -14,7 +14,7 @@ CREATE PROCEDURE [dbo].[UpdateRooms]
 @RoomID int,
 @Price int,
 @RoomNumber int,
-@TV int,
+@TV bit,
 @RoomType nvarchar(max),
 @NumberOfBeds int,
 @Balcony bit,
