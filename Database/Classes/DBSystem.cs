@@ -34,6 +34,7 @@ namespace Hotel_booking
                     review[5] = int.Parse(rdr["user_id"].ToString());
                 }
             }
+            conn.Close();
             return review;
         }
 

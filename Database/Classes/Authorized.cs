@@ -63,7 +63,7 @@ namespace Hotel_booking
 
 			// Вид Command является StoredProcedure
 			cmd.CommandType = CommandType.StoredProcedure;
-			cmd.Parameters.Add("@HotelID", SqlDbType.Int).Value = id;
+			//cmd.Parameters.Add("@HotelID", SqlDbType.Int).Value = id;
 
 			// Выполнить процедуру.
 			cmd.ExecuteNonQuery();
@@ -93,7 +93,6 @@ namespace Hotel_booking
 			Console.WriteLine("hotel type: " + HotelData[5]);
 			Console.WriteLine("rating: " + HotelData[6]);
 			Console.WriteLine("hotel name: " + HotelData[7]);
-			return HotelData;
 			return true;
 		}
 	}

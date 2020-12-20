@@ -28,7 +28,7 @@ namespace Hotel_booking
             cmd.Parameters.Add("@Password", SqlDbType.NVarChar, int.MaxValue).Value = password_str;
             // Выполнить процедуру.
             cmd.ExecuteNonQuery();
-            
+            conn.Close();
         }
 
         public void RemoveHotel(int hotel_id)
@@ -42,6 +42,7 @@ namespace Hotel_booking
                 new SqlParameter("@hotel_id", SqlDbType.Int) { Value = hotel_id}
             };
             cmd.ExecuteNonQuery();
+            conn.Close();
         }
     }
 }

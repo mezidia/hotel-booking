@@ -28,6 +28,7 @@ namespace Hotel_booking
                     user[2] = int.Parse(rdr["user_id"].ToString());
                 }
             }
+            conn.Close();
             return user;
         }
 	}
