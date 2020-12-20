@@ -46,14 +46,9 @@ namespace Hotel_booking
             return state;
         }
 
-		public int CheckDeals()
-		{
-
-
-			return 0;
-		}
-
-		public object SearchForInfo(object[] fields)
+        //input: object[CountryId, NumberOfStars, tv, HotelType, Rating, Sale]
+        //output: true if successful
+        public object SearchForInfo(object[] fields)
 		{
             SqlConnection conn = DBConnConfig.GetDBConnection();
             conn.Open();
@@ -66,6 +61,7 @@ namespace Hotel_booking
             cmd.Parameters.Add("@NumberOfStars", SqlDbType.Int).Value = fields[1];
             cmd.Parameters.Add("@HotelType", SqlDbType.Int).Value = fields[2];
             cmd.Parameters.Add("@Rating", SqlDbType.Int).Value = fields[3];
+            cmd.Parameters.Add("@Sale", SqlDbType.Int).Value = fields[4];
 
             // Выполнить процедуру.
             cmd.ExecuteNonQuery();
