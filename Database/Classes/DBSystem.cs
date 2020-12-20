@@ -11,9 +11,10 @@ namespace Hotel_booking
 	class DBSystem
 	{
 		// methods
-		public Review GetReviews(int reviewId)
+		public object[] GetReviews(int reviewId)
 		{
-            Review review = new Review();
+            //Review review = new Review();
+            object[] review = new object[6];
             SqlConnection conn = DBConnConfig.GetDBConnection();
             conn.Open();
             SqlCommand cmd = new SqlCommand("GetReview", conn);
@@ -25,12 +26,12 @@ namespace Hotel_booking
             {
                 while (rdr.Read())
                 {
-                    review.createDate_date =DateTime.Parse(rdr["createDate_date"].ToString());
-                    review.hotel_id = int.Parse(rdr["hotel_id"].ToString());
-                    review.rating_int = int.Parse(rdr["rating_int"].ToString());
-                    review.reviews_id = reviewId;
-                    review.review_str = rdr["review_str"].ToString();
-                    review.user_id = int.Parse(rdr["user_id"].ToString());
+                    review[0] =DateTime.Parse(rdr["createDate_date"].ToString());
+                    review[1] = int.Parse(rdr["hotel_id"].ToString());
+                    review[2] = int.Parse(rdr["rating_int"].ToString());
+                    review[3]= reviewId;
+                    review[4] = rdr["review_str"].ToString();
+                    review[5] = int.Parse(rdr["user_id"].ToString());
                 }
             }
             return review;

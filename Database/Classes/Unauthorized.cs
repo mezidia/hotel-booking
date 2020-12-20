@@ -7,9 +7,10 @@ namespace Hotel_booking
 	public class Unauthorized : User
 	{
 		// methods
-		public User SignUpLogIn(string login_str, string password_str)
+		public object[] SignUpLogIn(string login_str, string password_str)
 		{
-            User user = new User();
+            // User user = new User();
+            object[] user= new object[3];
             SqlConnection conn = DBConnConfig.GetDBConnection();
             conn.Open();
             SqlCommand cmd = new SqlCommand("LogIn", conn);
@@ -22,9 +23,9 @@ namespace Hotel_booking
             {
                 while (rdr.Read())
                 {
-                    user.password_str = password_str;
-                    user.login_str = login_str;
-                    user.user_id = int.Parse(rdr["user_id"].ToString());
+                    user[0] = password_str;
+                    user[1] = login_str;
+                    user[2] = int.Parse(rdr["user_id"].ToString());
                 }
             }
             return user;
