@@ -7,12 +7,22 @@ using System.Data;
 
 namespace Hotel_booking
 {
-	public class User
-	{
+    public class User
+    {
+        public int user_id { get; set; }
+        public int country_id { get; set; }
+        public int phoneNumber_int { get; set; }
+        public string email_str { get; set; }
+        public string login_str { get; set; }
+        public string userName_str { get; set; }
+        public int age_int { get; set; }
+        public string password_str { get; set; }
+        public int permission_int { get; set; }
+
         //input: object[price, roomNumber, tv, roomType, numberOfBeds, balcony, sale]
         //output: 
         public bool UpdateRoom(object[] fields)
-		{
+        {
             bool state;
             SqlConnection conn = DBConnConfig.GetDBConnection();
             conn.Open();
@@ -35,7 +45,7 @@ namespace Hotel_booking
             {
                 cmd.ExecuteNonQuery();
                 state = true;
-            } 
+            }
             catch (Exception e)
             {
                 Console.WriteLine("Error: " + e.Message);
@@ -46,18 +56,18 @@ namespace Hotel_booking
             return state;
         }
 
-		public int CheckDeals()
-		{
+        public int CheckDeals()
+        {
 
 
-			return 0;
-		}
+            return 0;
+        }
 
-		public int Search()
-		{
+        public int Search()
+        {
 
 
-			return 0;
-		}
-	}
+            return 0;
+        }
+    }
 }

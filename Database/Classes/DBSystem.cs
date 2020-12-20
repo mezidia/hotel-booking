@@ -4,16 +4,37 @@ using System.Text;
 using hotel_booking.SqlConn;
 using System.Data.SqlClient;
 using System.Data;
+using hotel_booking.Database.Classes;
 
 namespace Hotel_booking
 {
 	class DBSystem
 	{
 		// methods
-		public void GetReviews()
+		public Review GetReviews(int reviewId)
 		{
+            Review review = new Review();
+            SqlConnection conn = DBConnConfig.GetDBConnection();
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("GetReview", conn);
 
-		}
+            // Вид Command является StoredProcedure
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@ReviewID", SqlDbType.Int).Value = reviewId;
+            using (SqlDataReader rdr = cmd.ExecuteReader())
+            {
+                while (rdr.Read())
+                {
+                    review.createDate_date =DateTime.Parse(rdr["createDate_date"].ToString());
+                    review.hotel_id = int.Parse(rdr["hotel_id"].ToString());
+                    review.rating_int = int.Parse(rdr["rating_int"].ToString());
+                    review.reviews_id = reviewId;
+                    review.review_str = rdr["review_str"].ToString();
+                    review.user_id = int.Parse(rdr["user_id"].ToString());
+                }
+            }
+            return review;
+        }
 
 		public void GetRooms()
 		{
