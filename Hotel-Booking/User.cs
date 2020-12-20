@@ -6,6 +6,7 @@ namespace Hotel_booking
 {
 	class User
 	{
+		// methods
 		public int CheckRooms()
 		{
 

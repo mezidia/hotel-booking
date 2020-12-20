@@ -6,13 +6,57 @@ namespace Hotel_booking
 {
 	public class Authorized : User
 	{
-		protected string email;
-		protected string login;
-		protected string password;
+		// properties
 
-		protected int age;
-		protected int phoneNumber;
-		protected int country;
-		protected int id;
+		protected string Email{ get; set; }
+		protected string Login { get; set; };
+		protected string Password { get; set; };
+
+		protected int Age { get; set; };
+		protected int PhoneNumber { get; set; };
+		protected int Country { get; set; };
+		protected int ID { get; set; };
+
+		// methods
+
+		public void Book(this.ID)
+		{
+
+		}
+
+		public void CheckBookings()
+		{
+
+		}
+
+		public void Review()
+		{
+
+		}
+
+		public void CancelBooking()
+		{
+
+		}
+
+		public void ReceiveEmails()
+		{
+
+		}
+
+		public void ReportReviews()
+		{
+
+		}
+
+		public void LogOut()
+		{
+
+		}
+
+		public void AddHotel()
+		{
+
+		}
 	}
 }
