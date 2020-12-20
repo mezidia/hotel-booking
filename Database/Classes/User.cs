@@ -9,15 +9,7 @@ namespace Hotel_booking
 {
     public class User
     {
-        public int user_id { get; set; }
-        public int country_id { get; set; }
-        public int phoneNumber_int { get; set; }
-        public string email_str { get; set; }
-        public string login_str { get; set; }
-        public string userName_str { get; set; }
-        public int age_int { get; set; }
-        public string password_str { get; set; }
-        public int permission_int { get; set; }
+        
 
         //input: object[price, roomNumber, tv, roomType, numberOfBeds, balcony, sale]
         //output: 

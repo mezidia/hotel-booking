@@ -29,6 +29,7 @@ namespace Hotel_booking
             // Выполнить процедуру.
             cmd.ExecuteNonQuery();
             conn.Close();
+            conn.Dispose();
         }
 
         public void RemoveHotel(int hotel_id)
@@ -43,6 +44,7 @@ namespace Hotel_booking
             };
             cmd.ExecuteNonQuery();
             conn.Close();
+            conn.Dispose();
         }
     }
 }

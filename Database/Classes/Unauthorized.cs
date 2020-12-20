@@ -4,13 +4,13 @@ using System.Data.SqlClient;
 
 namespace Hotel_booking
 {
-	public class Unauthorized : User
-	{
-		// methods
-		public object[] SignUpLogIn(string login_str, string password_str)
-		{
+    public class Unauthorized : User
+    {
+        // methods
+        public User SignUpLogIn(string login_str, string password_str)
+        {
             // User user = new User();
-            object[] user= new object[3];
+            Authorized user = new Authorized();
             SqlConnection conn = DBConnConfig.GetDBConnection();
             conn.Open();
             SqlCommand cmd = new SqlCommand("LogIn", conn);
@@ -23,13 +23,58 @@ namespace Hotel_booking
             {
                 while (rdr.Read())
                 {
-                    user[0] = password_str;
-                    user[1] = login_str;
-                    user[2] = int.Parse(rdr["user_id"].ToString());
+                    user.Password = password_str;
+                    user.Login = login_str;
+                    user.ID = int.Parse(rdr["user_id"].ToString());
+                    user.Permission = int.Parse(rdr["permission_int"].ToString());
                 }
             }
             conn.Close();
-            return user;
+            conn.Dispose();
+            if (user.Permission == 1)
+            {
+                return new Authorized()
+                {
+                    ID = user.ID,
+                    Password = user.Password,
+                    Login = user.Login,
+                    Permission = user.Permission
+                };
+            }
+            else if (user.Permission == 2)
+            {
+                return new HotelAdmin()
+                {
+                    ID = user.ID,
+                    Password = user.Password,
+                    Login = user.Login,
+                    Permission = user.Permission
+                };
+            }
+            else if (user.Permission == 3)
+            {
+                return new HotelOwner()
+                {
+                    ID = user.ID,
+                    Password = user.Password,
+                    Login = user.Login,
+                    Permission = user.Permission
+                };
+            }
+            else if (user.Permission == 4)
+            {
+                return new Admin()
+                {
+                    ID = user.ID,
+                    Password = user.Password,
+                    Login = user.Login,
+                    Permission = user.Permission
+                };
+            }
+            else
+            {
+                return new Unauthorized();
+            }
         }
-	}
+    }
 }

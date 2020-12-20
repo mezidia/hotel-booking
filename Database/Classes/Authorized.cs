@@ -9,14 +9,15 @@ namespace Hotel_booking
 	{
 		// properties
 
-		protected string Email { get; set; }
-		protected string Login { get; set; }
-		protected string Password { get; set; }
+		public string Email { get; set; }
+		public string Login { get; set; }
+		public string Password { get; set; }
 
-		protected int Age { get; set; }
-		protected int PhoneNumber { get; set; }
-		protected int Country { get; set; }
-		protected int ID { get; set; }
+		public int Age { get; set; }
+		public int PhoneNumber { get; set; }
+		public int Country { get; set; }
+		public int ID { get; set; }
+		public int Permission { get; set; }
 
 		// methods
 
