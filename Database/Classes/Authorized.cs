@@ -20,9 +20,41 @@ namespace Hotel_booking
 
 		// methods
 
-		public void Book()
+		public bool Book(object[] bookfields)
 		{
+			bool funcState = false;
 
+			SqlConnection conn = DBConnConfig.GetDBConnection();
+			conn.Open();
+
+			try
+			{
+				SqlCommand cmd = new SqlCommand("SetBooking", conn);
+
+				//Command type -> StoredProcedure
+				cmd.CommandType = CommandType.StoredProcedure;
+				cmd.Parameters.Add("@Book", SqlDbType.Int).Value = bookfields[0];
+				cmd.Parameters.Add("@User", SqlDbType.Int).Value = bookfields[1];
+				cmd.Parameters.Add("@Room", SqlDbType.Int).Value = bookfields[2];
+				cmd.Parameters.Add("@Description_str", SqlDbType.NVarChar).Value = bookfields[3];
+				cmd.Parameters.Add("@StartDate", SqlDbType.DateTime).Value = hotelFields[4];
+				cmd.Parameters.Add("@EndDate", SqlDbType.DateTime).Value = hotelFields[5];
+
+				//exec procedure
+				cmd.ExecuteNonQuery();
+				funcState = true;
+			}
+			catch (Exception e)
+			{
+				//Console.log error
+				Console.WriteLine("Error: " + e.Message);
+				funcState = false;
+			}
+
+			conn.Close();
+			conn.Dispose();
+
+			return funcState;
 		}
 
 		public void CheckBookings(int id)
