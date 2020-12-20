@@ -20,9 +20,48 @@ namespace Hotel_booking
 
 		}
 
-		public void GetUser()
+		public void GetUser(int id)
 		{
+            SqlConnection conn = DBConnConfig.GetDBConnection();
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("GetUser", conn);
 
+            // Вид Command является StoredProcedure
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@UserID", SqlDbType.Int).Value = id;
+
+            // Выполнить процедуру.
+            cmd.ExecuteNonQuery();
+
+            object[] UserData = new object[9];
+
+            using (SqlDataReader rdr = cmd.ExecuteReader())
+            {
+                while (rdr.Read())
+                {
+                    UserData[0] = int.Parse(rdr["user_id"].ToString());
+                    UserData[1] = int.Parse(rdr["country_id"].ToString());
+                    UserData[2] = int.Parse(rdr["permission_int"].ToString());
+                    UserData[3] = int.Parse(rdr["phoneNumber_int"].ToString());
+                    UserData[4] = rdr["email_str"].ToString();
+                    UserData[5] = rdr["login_str"].ToString();
+                    UserData[6] = rdr["userName_str"].ToString();
+                    UserData[7] = int.Parse(rdr["age_int"].ToString());
+                    UserData[8] = rdr["password_str"].ToString();
+                }
+            }
+            //output recieved data
+            Console.WriteLine("User id: " + HotelData[0]);
+            Console.WriteLine("Country id: " + HotelData[1]);
+            Console.WriteLine("Permission: " + HotelData[2]);
+            Console.WriteLine("Phone number: " + HotelData[3]);
+            Console.WriteLine("Email: " + HotelData[4]);
+            Console.WriteLine("Login: " + HotelData[5]);
+            Console.WriteLine("Username: " + HotelData[6]);
+            Console.WriteLine("Age: " + HotelData[7]);
+            Console.WriteLine("Password: " + HotelData[7]);
+
+            return UserData;
 		}
 
         //input: id of hotel
