@@ -40,7 +40,7 @@ namespace Hotel_booking
             // Выполнить процедуру.
             cmd.ExecuteNonQuery();
 
-            object[] HotelData = new object[4];
+            object[] HotelData = new object[8];
 
             using (SqlDataReader rdr = cmd.ExecuteReader())
             {
