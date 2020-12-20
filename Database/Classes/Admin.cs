@@ -40,15 +40,5 @@ namespace Hotel_booking
             conn.Dispose();
             return state;
         }
-
-		public void ContentModeration()
-		{
-
-		}
-
-		public void UsersSupport()
-		{
-
-		}
 	}
 }
