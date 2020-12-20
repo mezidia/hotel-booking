@@ -25,9 +25,45 @@ namespace Hotel_booking
 
 		}
 
-		public void CheckBookings()
+		public void CheckBookings(int id)
 		{
+			SqlConnection conn = DBConnConfig.GetDBConnection();
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("GetBooking", conn);
 
+            // Вид Command является StoredProcedure
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@UserID", SqlDbType.Int).Value = id;
+
+            // Выполнить процедуру.
+            cmd.ExecuteNonQuery();
+
+            object[] UserBookings = new object[9];
+
+            using (SqlDataReader rdr = cmd.ExecuteReader())
+            {
+                while (rdr.Read())
+                {
+                    UserBookings[0] = int.Parse(rdr["book_id"].ToString());
+                    UserBookings[1] = int.Parse(rdr["user_id"].ToString());
+                    UserBookings[2] = int.Parse(rdr["room_id"].ToString());
+                    UserBookings[3] = rdr["description_str"].ToString();
+					UserBookings[4] = int.Parse(rdr["startDate_int"].ToString());
+                    UserBookings[5] = int.Parse(rdr["endDate_int"].ToString());
+                }
+            }
+            //output recieved data
+            Console.WriteLine("Book id: " + UserBookings[0]);
+            Console.WriteLine("User id: " + UserBookings[1]);
+            Console.WriteLine("Room id: " + UserBookings[2]);
+            Console.WriteLine("Description: " + UserBookings[3]);
+            Console.WriteLine("Start date: " + UserBookings[4]);
+            Console.WriteLine("End date: " + UserBookings[5]);
+
+            conn.Close();
+            conn.Dispose();
+
+            return UserData;
 		}
 
 		public void Review()

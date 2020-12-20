@@ -61,6 +61,9 @@ namespace Hotel_booking
             Console.WriteLine("Age: " + HotelData[7]);
             Console.WriteLine("Password: " + HotelData[7]);
 
+            conn.Close();
+            conn.Dispose();
+
             return UserData;
 		}
 
