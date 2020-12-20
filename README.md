@@ -108,7 +108,7 @@ The reliability of this project will be extremely high, because the main languag
 - [Sichkar Tetiana](https://github.com/fhrr-sht)
 
 ## Database schema
-![alt tag](https://i.ibb.co/8Kn3JfB/Booking.png)
+![alt tag](https://i.imgur.com/kkd9iFk.png)
 
 ## Creation date
 7.09.2020
