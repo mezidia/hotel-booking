@@ -98,9 +98,40 @@ namespace Hotel_booking
             return UserData;
 		}
 
-		public void Review()
+		public void Review(object[] reviewfields)
 		{
+			bool funcState = false;
 
+			SqlConnection conn = DBConnConfig.GetDBConnection();
+			conn.Open();
+
+			try
+			{
+				SqlCommand cmd = new SqlCommand("SetReview", conn);
+
+				//Command type -> StoredProcedure
+				cmd.CommandType = CommandType.StoredProcedure;
+				cmd.Parameters.Add("@UserID", SqlDbType.Int).Value = reviewfields[0];
+				cmd.Parameters.Add("@HotelID", SqlDbType.Int).Value = reviewfields[1];
+				cmd.Parameters.Add("@Rating", SqlDbType.Int).Value = reviewfields[2];
+				cmd.Parameters.Add("@Review", SqlDbType.NVarChar).Value = reviewfields[3];
+				cmd.Parameters.Add("@CreationDate", SqlDbType.DateTime).Value = reviewfields[4];
+
+				//exec procedure
+				cmd.ExecuteNonQuery();
+				funcState = true;
+			}
+			catch (Exception e)
+			{
+				//Console.log error
+				Console.WriteLine("Error: " + e.Message);
+				funcState = false;
+			}
+
+			conn.Close();
+			conn.Dispose();
+
+			return funcState;
 		}
 
 		public void CancelBooking()
