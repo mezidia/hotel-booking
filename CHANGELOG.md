@@ -8,3 +8,7 @@
 
 0.0.3v alpha (25.10.2020)
 - add diagrams and table of precedents for [functionality](https://github.com/mezidia/hotel-booking#functionality)
+
+0.0.nv (20.12.2020)
+- connect SQL and C#
+- add functions for interacting with database
