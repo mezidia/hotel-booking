@@ -15,7 +15,7 @@ namespace Hotel_booking
 
 		}
 
-		//input: id of room
+//input: id of room
 //output: object[hotel id, price, room number, freee dates, tv, room type, number of beds, balcony, sale
 public object GetRoom(int id)
     {
@@ -62,6 +62,7 @@ public object GetRoom(int id)
         return HotelData;
     }
 		
+
         //input: id of user
         //output: object[country, permission, phoneNumber, email, login, userName, age, password]
         public object[] GetUser(int id)
