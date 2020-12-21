@@ -114,6 +114,9 @@ The reliability of this project will be extremely high, because the main languag
 ## Database schema
 ![alt tag](https://i.imgur.com/kkd9iFk.png)
 
+## Class diagram
+[![Untitled-Document-2.png](https://i.postimg.cc/FHNCyK0c/Untitled-Document-2.png)](https://postimg.cc/RNpT94sV)
+
 ## Creation date
 7.09.2020
 

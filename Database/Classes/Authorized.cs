@@ -205,8 +205,8 @@ namespace Hotel_booking
 				cmd.CommandType = CommandType.StoredProcedure;
 				cmd.Parameters.Add("@Country", SqlDbType.Int).Value = hotelFields[0];
 				cmd.Parameters.Add("@Owner", SqlDbType.Int).Value = hotelFields[1];
-				cmd.Parameters.Add("@NumberOfStars", SqlDbType.NVarChar).Value = hotelFields[2];
-				cmd.Parameters.Add("@Description", SqlDbType.Int).Value = hotelFields[3];
+				cmd.Parameters.Add("@NumberOfStars", SqlDbType.Int).Value = hotelFields[2];
+				cmd.Parameters.Add("@Description", SqlDbType.NVarChar).Value = hotelFields[3];
 				cmd.Parameters.Add("@Location", SqlDbType.Int).Value = hotelFields[4];
 				cmd.Parameters.Add("@HotelType", SqlDbType.Int).Value = hotelFields[5];
 				cmd.Parameters.Add("@Rating", SqlDbType.Int).Value = hotelFields[6];
