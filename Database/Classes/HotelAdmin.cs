@@ -51,6 +51,7 @@ namespace Hotel_booking
 
 		//input: object[price, roomNumber, tv, roomType, numberOfBeds, balcony, sale]
 		//output: true if successful
+		
 		public bool UpdateRoom(object[] fields)
 		{
 			bool state;
