@@ -70,14 +70,18 @@ The target audience of Hotel Booking DB is the developers of any hotel room rese
 - [See check in and check out dates](https://github.com/mezidia/hotel-booking/blob/master/docs/AuthorizedUserCheckDates.png)
 - [Leave comments and reviews, rate services](https://github.com/mezidia/hotel-booking/blob/master/docs/AuthorizedUserReview.png)
 - [Cancel booking](https://github.com/mezidia/hotel-booking/blob/master/docs/AuthorizedUserCancel.png)
+- [Log out](https://github.com/mezidia/hotel-booking/blob/master/docs/LogOut.png)
+- [Edit customer's booking information (updating check in, check out, room preferences, bad preferences and also cancelling booking) (for hotel admins only)](https://github.com/mezidia/hotel-booking/blob/master/docs/EditBooking.png)
+- [Update hotel info and prices (for hotel admins only)](https://github.com/mezidia/hotel-booking/blob/master/docs/AuthorizedUserUpdateInfo.png)  
+
+Implementation of functions below is left for clients:  
 - [Receive emails about discounts and order updates](https://github.com/mezidia/hotel-booking/blob/master/docs/AuthorizedUserOrderUpdates.png)
 - [Report comments](https://github.com/mezidia/hotel-booking/blob/master/docs/ReportComment.png)
-- [Log out](https://github.com/mezidia/hotel-booking/blob/master/docs/LogOut.png)
-- [Edit customer's booking information (updating check in, check out, room preferences, bed preferences and also cancelling booking) (for hotel admins only)](https://github.com/mezidia/hotel-booking/blob/master/docs/EditBooking.png)
-- [Update hotel info and prices (for hotel admins only)](https://github.com/mezidia/hotel-booking/blob/master/docs/AuthorizedUserUpdateInfo.png)
 
 ### Admins can
-- [Change permissions for users or hotels](https://github.com/mezidia/hotel-booking/blob/master/docs/AdminChangePermissions.png.png)
+- [Change permissions for users or hotels](https://github.com/mezidia/hotel-booking/blob/master/docs/AdminChangePermissions.png.png)  
+
+Implementation of functions below is left for clients:  
 - [Content moderation](https://github.com/mezidia/hotel-booking/blob/master/docs/AdminModerateContent.png)
 - [Users support](https://github.com/mezidia/hotel-booking/blob/master/docs/AdminSupport.png)
 
