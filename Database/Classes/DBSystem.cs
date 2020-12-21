@@ -10,7 +10,6 @@ namespace Hotel_booking
 		// methods
 		public object[] GetReviews(int reviewId)
 		{
-            //Review review = new Review();
             object[] review = new object[6];
             SqlConnection conn = DBConnConfig.GetDBConnection();
             conn.Open();
