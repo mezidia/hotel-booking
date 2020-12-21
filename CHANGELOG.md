@@ -21,3 +21,6 @@
 0.1.0v (20.12.2020)
 - connect SQL and C#
 - add functions for interacting with database
+
+0.1.1v (21.12.2020)
+- add documentation for all functions
