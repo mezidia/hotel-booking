@@ -20,59 +20,9 @@ namespace Hotel_booking
 
 		}
 
-		public object[] GetUser(int id)
+		public void GetUser()
 		{
-            SqlConnection conn = DBConnConfig.GetDBConnection();
-            conn.Open();
 
-            object[] UserData = new object[8];
-
-            try
-            {
-                SqlCommand cmd = new SqlCommand("GetUser", conn);
-
-                //Command type -> StoredProcedure
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@UserID", SqlDbType.Int).Value = id;
-
-                //exec procedure
-                cmd.ExecuteNonQuery();
-
-                using (SqlDataReader rdr = cmd.ExecuteReader())
-                {
-                    while (rdr.Read())
-                    {
-                        UserData[0] = int.Parse(rdr["country_id"].ToString());
-                        UserData[1] = int.Parse(rdr["permission_int"].ToString());
-                        UserData[2] = int.Parse(rdr["phoneNumber_int"].ToString());
-                        UserData[3] = rdr["email_str"].ToString();
-                        UserData[4] = rdr["login_str"].ToString();
-                        UserData[5] = rdr["userName_str"].ToString();
-                        UserData[6] = int.Parse(rdr["age_int"].ToString());
-                        UserData[7] = rdr["password_str"].ToString();
-                    }
-                }
-                //output recieved data
-                Console.WriteLine("country id : " + UserData[0]);
-                Console.WriteLine("permission : " + UserData[1]);
-                Console.WriteLine("phoneNumber : " + UserData[2]);
-                Console.WriteLine("email : " + UserData[3]);
-                Console.WriteLine("userName : " + UserData[4]);
-                Console.WriteLine("hotel type: " + UserData[5]);
-                Console.WriteLine("age : " + UserData[6]);
-                Console.WriteLine("password : " + UserData[7]);
-            }
-            catch (Exception e)
-            {
-                //Console.log error
-                Console.WriteLine("Error: " + e.Message);
-            }
-
-            //close conn
-            conn.Close();
-            conn.Dispose();
-
-            return UserData;
         }
 
         //input: id of hotel
