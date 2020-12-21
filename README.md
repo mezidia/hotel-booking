@@ -13,6 +13,7 @@ Our hotel booking project with databases
     - [Characteristics of business relations](#characteristics-of-business-relations)
     - [Target audience](#target-audience)
 - [Functionality](#functionality)
+- [API](#api)
 - [Interested parties](#interested-parties)
 - [Availability](#availability)
 - [Reliability](#reliability)
@@ -87,6 +88,22 @@ Implementation of functions below is left for clients:
 
 ### [Table Of Precedents](https://github.com/mezidia/hotel-booking/blob/master/docs/table_of_precedents.jpg)  
 ### [E-R Diagram](https://github.com/mezidia/hotel-booking/blob/master/docs/E-R%20diagram(1).jpg)
+
+## API
+
+### Admin.cs
+
+### Authorized.cs
+
+### DBSystem.cs
+
+### HotelAdmin.cs
+
+### HotelOwner.cs
+
+### Unauthorized.cs
+
+### User.cs
 
 ## Interested parties
 Below is given a list of parties, that may be interested in our project:
