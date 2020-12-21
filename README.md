@@ -79,7 +79,9 @@ Implementation of functions below is left for clients:
 - [Report comments](https://github.com/mezidia/hotel-booking/blob/master/docs/ReportComment.png)
 
 ### Admins can
-- [Change permissions for users or hotels](https://github.com/mezidia/hotel-booking/blob/master/docs/AdminChangePermissions.png.png)
+- [Change permissions for users or hotels](https://github.com/mezidia/hotel-booking/blob/master/docs/AdminChangePermissions.png.png)  
+
+Implementation of functions below is left for clients:  
 - [Content moderation](https://github.com/mezidia/hotel-booking/blob/master/docs/AdminModerateContent.png)
 - [Users support](https://github.com/mezidia/hotel-booking/blob/master/docs/AdminSupport.png)
 
@@ -111,6 +113,9 @@ The reliability of this project will be extremely high, because the main languag
 
 ## Database schema
 ![alt tag](https://i.imgur.com/kkd9iFk.png)
+
+## Class diagram
+[![Untitled-Document-2.png](https://i.postimg.cc/FHNCyK0c/Untitled-Document-2.png)](https://postimg.cc/RNpT94sV)
 
 ## Creation date
 7.09.2020

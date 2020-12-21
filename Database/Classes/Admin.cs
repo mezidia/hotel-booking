@@ -1,26 +1,44 @@
-﻿using hotel_booking.SqlConn;
-using System.Data;
+using System;
+using System.Collections.Generic;
+using System.Text;
+using hotel_booking.SqlConn;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace Hotel_booking
 {
 	public class Admin : Authorized
 	{
-		// methods
-		public void ChangePermissions(int id, int permission)
+        //input: id, permission
+        //output: true if successful
+        public bool ChangePermissions(int id, int permission)
+
 		{
-			
-		}
+            bool state;
+            SqlConnection conn = DBConnConfig.GetDBConnection();
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("ChangePermissions", conn);
 
-		
-		public void ContentModeration()
-		{
+            // Вид Command является StoredProcedure
+            cmd.CommandType = CommandType.StoredProcedure;
 
-		}
+            cmd.Parameters.Add("@UserdID", SqlDbType.Int).Value = id;
+            cmd.Parameters.Add("@Permissions", SqlDbType.Int).Value = permission;
 
-		public void UsersSupport()
-		{
-
-		}
+            // Выполнить процедуру.
+            try
+            {
+                cmd.ExecuteNonQuery();
+                state = true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error: " + e.Message);
+                state = false;
+            }
+            conn.Close();
+            conn.Dispose();
+            return state;
+        }
 	}
 }
