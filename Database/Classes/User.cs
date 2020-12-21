@@ -10,7 +10,7 @@ namespace Hotel_booking
 	public class User
 	{
         //input: object[price, roomNumber, tv, roomType, numberOfBeds, balcony, sale]
-        //output: 
+        //output: true if successful
         public bool UpdateRoom(object[] fields)
 		{
             bool state;
@@ -46,18 +46,37 @@ namespace Hotel_booking
             return state;
         }
 
-		public int CheckDeals()
+        //input: object[CountryId, NumberOfStars, tv, HotelType, Rating, Sale]
+        //output: true if successful
+        public object SearchForInfo(object[] fields)
 		{
+            SqlConnection conn = DBConnConfig.GetDBConnection();
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("SearchForInfo", conn);
 
+            // Вид Command является StoredProcedure
+            cmd.CommandType = CommandType.StoredProcedure;
 
-			return 0;
-		}
+            cmd.Parameters.Add("@CountryId", SqlDbType.Int).Value = fields[0];
+            cmd.Parameters.Add("@NumberOfStars", SqlDbType.Int).Value = fields[1];
+            cmd.Parameters.Add("@HotelType", SqlDbType.Int).Value = fields[2];
+            cmd.Parameters.Add("@Rating", SqlDbType.Int).Value = fields[3];
+            cmd.Parameters.Add("@Sale", SqlDbType.Int).Value = fields[4];
 
-		public int Search()
-		{
+            // Выполнить процедуру.
+            cmd.ExecuteNonQuery();
+            object[] hotels = new object[1];
 
-
-			return 0;
-		}
+            using (SqlDataReader rdr = cmd.ExecuteReader())
+            {
+                while (rdr.Read())
+                {
+                    hotels[0] = int.Parse(rdr["hotel_id"].ToString());
+                }
+            }
+            //output recieved data
+            Console.WriteLine("hotel: " + hotels[0]);
+            return hotels[0];
+        }
 	}
 }
