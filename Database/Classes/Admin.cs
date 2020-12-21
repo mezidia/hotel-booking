@@ -9,10 +9,9 @@ namespace Hotel_booking
 {
 	public class Admin : Authorized
 	{
-        //input: id, permission
-        //output: true if successful
+        //input:  User id, permission int
+	//output: true if permission changed successfully or false if smt went wrong
         public bool ChangePermissions(int id, int permission)
-
 		{
             bool state;
             SqlConnection conn = DBConnConfig.GetDBConnection();
