@@ -23,7 +23,6 @@ namespace Hotel_booking
 		public void GetUser()
 		{
         
-        
         }
 
         //input: id of hotel
