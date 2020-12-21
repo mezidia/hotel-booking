@@ -79,7 +79,9 @@ Implementation of functions below is left for clients:
 - [Report comments](https://github.com/mezidia/hotel-booking/blob/master/docs/ReportComment.png)
 
 ### Admins can
-- [Change permissions for users or hotels](https://github.com/mezidia/hotel-booking/blob/master/docs/AdminChangePermissions.png.png)
+- [Change permissions for users or hotels](https://github.com/mezidia/hotel-booking/blob/master/docs/AdminChangePermissions.png.png)  
+
+Implementation of functions below is left for clients:  
 - [Content moderation](https://github.com/mezidia/hotel-booking/blob/master/docs/AdminModerateContent.png)
 - [Users support](https://github.com/mezidia/hotel-booking/blob/master/docs/AdminSupport.png)
 
