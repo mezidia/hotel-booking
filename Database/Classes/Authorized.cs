@@ -8,7 +8,6 @@ namespace Hotel_booking
 	public class Authorized : User
 	{
 		// properties
-
 		public string Email { get; set; }
 		public string Login { get; set; }
 		public string Password { get; set; }
@@ -212,10 +211,9 @@ namespace Hotel_booking
 			// Выполнить процедуру.
 			cmd.ExecuteNonQuery();
 
-
 			try
 			{
-				SqlCommand cmd = new SqlCommand("SetHotel", conn);
+				//SqlCommand cmd = new SqlCommand("SetHotel", conn);
 
 				//Command type -> StoredProcedure
 				cmd.CommandType = CommandType.StoredProcedure;
@@ -240,14 +238,14 @@ namespace Hotel_booking
 			}
 
 			//output recieved data
-			Console.WriteLine("country: " + HotelData[0]);
-			Console.WriteLine("owner id: " + HotelData[1]);
-			Console.WriteLine("number of stars: " + HotelData[2]);
-			Console.WriteLine("description: " + HotelData[3]);
-			Console.WriteLine("location: " + HotelData[4]);
-			Console.WriteLine("hotel type: " + HotelData[5]);
-			Console.WriteLine("rating: " + HotelData[6]);
-			Console.WriteLine("hotel name: " + HotelData[7]);
+			Console.WriteLine("country: " + hotelFields[0]);
+			Console.WriteLine("owner id: " + hotelFields[1]);
+			Console.WriteLine("number of stars: " + hotelFields[2]);
+			Console.WriteLine("description: " + hotelFields[3]);
+			Console.WriteLine("location: " + hotelFields[4]);
+			Console.WriteLine("hotel type: " + hotelFields[5]);
+			Console.WriteLine("rating: " + hotelFields[6]);
+			Console.WriteLine("hotel name: " + hotelFields[7]);
 			return true;
 
 
@@ -255,7 +253,6 @@ namespace Hotel_booking
 			conn.Dispose();
 
 			return funcState;
-
 		}
 	}
 }
