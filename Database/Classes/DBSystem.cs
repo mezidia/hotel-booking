@@ -63,6 +63,7 @@ public object GetRoom(int id)
     }
 		
 
+
         //input: id of user
         //output: object[country, permission, phoneNumber, email, login, userName, age, password]
         public object[] GetUser(int id)
@@ -117,7 +118,7 @@ public object GetRoom(int id)
             conn.Close();
             conn.Dispose();
 
-            return UserData;
+
         }
 
         //input: id of hotel
