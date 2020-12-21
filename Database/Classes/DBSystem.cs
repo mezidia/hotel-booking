@@ -40,11 +40,11 @@ public object GetRoom(int id)
                     HotelData[1] = int.Parse(rdr["price_int"].ToString());
                     HotelData[2] = int.Parse(rdr["roomNumber_int"].ToString());
                     HotelData[3] = int.Parse(rdr["freeDates_int"].ToString());
-                    HotelData[4] = bit.Parse(rdr["TV_bool"].ToString());
+                    HotelData[4] = bool.Parse(rdr["TV_bool"].ToString());
                     HotelData[5] = rdr["roomType_str"].ToString();
                     HotelData[6] = int.Parse(rdr["numberOfBeds_int"].ToString());
-                    HotelData[7] = bit.Parse(rdr["balcony_bool"].ToString());
-                    HotelData[8] = bit.Parse(rdr["sale_bool"].ToString());
+                    HotelData[7] = bool.Parse(rdr["balcony_bool"].ToString());
+                    HotelData[8] = bool.Parse(rdr["sale_bool"].ToString());
                 }
             } 
         //output recieved data
