@@ -15,10 +15,53 @@ namespace Hotel_booking
 
 		}
 
-		public void GetRooms()
-		{
+		//input: id of room
+//output: object[hotel id, price, room number, freee dates, tv, room type, number of beds, balcony, sale
+public object GetRoom(int id)
+    {
+        SqlConnection conn = DBConnConfig.GetDBConnection();
+        conn.Open();
+        SqlCommand cmd = new SqlCommand("GetRoom", conn);
+ 
+        // Вид Command является StoredProcedure
+        cmd.CommandType = CommandType.StoredProcedure;
+        cmd.Parameters.Add("@RoomID", SqlDbType.Int).Value = id;
+  
+        // Выполнить процедуру.
+        cmd.ExecuteNonQuery();
 
-		}
+        object[] HotelData = new object[9];
+
+        using (SqlDataReader rdr = cmd.ExecuteReader())
+            {
+                while (rdr.Read())
+                {
+                    HotelData[0] = int.Parse(rdr["hotel_id"].ToString());
+                    HotelData[1] = int.Parse(rdr["price_int"].ToString());
+                    HotelData[2] = int.Parse(rdr["roomNumber_int"].ToString());
+                    HotelData[3] = int.Parse(rdr["freeDates_int"].ToString());
+                    HotelData[4] = bit.Parse(rdr["TV_bool"].ToString());
+                    HotelData[5] = rdr["roomType_str"].ToString();
+                    HotelData[6] = int.Parse(rdr["numberOfBeds_int"].ToString());
+                    HotelData[7] = bit.Parse(rdr["balcony_bool"].ToString());
+                    HotelData[8] = bit.Parse(rdr["sale_bool"].ToString());
+                }
+            } 
+        //output recieved data
+        Console.WriteLine("hotel id: " + HotelData[0]);
+        Console.WriteLine("price int: " + HotelData[1]);
+        Console.WriteLine("room number: " + HotelData[2]);
+        Console.WriteLine("free dates: " + HotelData[3]);
+        Console.WriteLine("tv: " + HotelData[4]);
+        Console.WriteLine("room type: " + HotelData[5]);
+        Console.WriteLine("number of beds: " + HotelData[6]);
+        Console.WriteLine("balcony: " + HotelData[7]);
+        Console.WriteLine("sale: " + HotelData[8]);
+        conn.Close();
+        conn.Dispose();
+        return HotelData;
+    }
+		
         //input: id of user
         //output: object[country, permission, phoneNumber, email, login, userName, age, password]
         public object[] GetUser(int id)
