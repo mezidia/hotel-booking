@@ -20,7 +20,8 @@ namespace Hotel_booking
 
 		}
 
-		public void GetUser()
+		
+        public void GetUser()
 		{
         
         }
