@@ -106,7 +106,7 @@ permission | `int` | `required` | None  | user's permission
 
 Name    | Type     | Argument     | Default | Description
 --------|----------|--------------|---------|------------
-bookfields | `object` | `required` | None  | information for booking
+bookfields | `object[]` | `required` | None  | information for booking
 
 #### CheckBookings(id)
 
@@ -118,7 +118,7 @@ id | `int` | `required` | None  | user's identifier
 
 Name    | Type     | Argument     | Default | Description
 --------|----------|--------------|---------|------------
-reviewfields | `object` | `required` | None | information for creating review
+reviewfields | `object[]` | `required` | None | information for creating review
 
 #### CancelBooking(id)
 
@@ -130,7 +130,7 @@ id | `int` | `required` | None | books's identifier
 
 Name    | Type     | Argument     | Default | Description
 --------|----------|--------------|---------|------------
-hotelFields | `object` | `required` | None | information about hotel
+hotelFields | `object[]` | `required` | None | information about hotel
 
 ### DBSystem.cs
 
