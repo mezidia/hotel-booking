@@ -57,7 +57,7 @@ namespace Hotel_booking
 			return funcState;
 		}
 
-		public void CheckBookings(int id)
+		public object[] CheckBookings(int id)
 		{
 			SqlConnection conn = DBConnConfig.GetDBConnection();
             conn.Open();
