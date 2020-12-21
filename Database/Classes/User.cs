@@ -7,18 +7,20 @@ using System.Data;
 
 namespace Hotel_booking
 {
-	public class User
-	{
+    public class User
+    {
+        
+
         //input: object[price, roomNumber, tv, roomType, numberOfBeds, balcony, sale]
         //output: true if successful
         public bool UpdateRoom(object[] fields)
-		{
+        {
             bool state;
             SqlConnection conn = DBConnConfig.GetDBConnection();
             conn.Open();
             SqlCommand cmd = new SqlCommand("UpdateRoom", conn);
 
-            // Вид Command является StoredProcedure
+            // Г‚ГЁГ¤ Command ГїГўГ«ГїГҐГІГ±Гї StoredProcedure
             cmd.CommandType = CommandType.StoredProcedure;
 
             cmd.Parameters.Add("@RoomID", SqlDbType.Int).Value = fields[0];
@@ -30,12 +32,12 @@ namespace Hotel_booking
             cmd.Parameters.Add("@Balcony", SqlDbType.Bit).Value = fields[6];
             cmd.Parameters.Add("@Sale", SqlDbType.Bit).Value = fields[7];
 
-            // Выполнить процедуру.
+            // Г‚Г»ГЇГ®Г«Г­ГЁГІГј ГЇГ°Г®Г¶ГҐГ¤ГіГ°Гі.
             try
             {
                 cmd.ExecuteNonQuery();
                 state = true;
-            } 
+            }
             catch (Exception e)
             {
                 Console.WriteLine("Error: " + e.Message);
@@ -46,6 +48,7 @@ namespace Hotel_booking
             return state;
         }
 
+
         //input: object[CountryId, NumberOfStars, tv, HotelType, Rating, Sale]
         //output: true if successful
         public object SearchForInfo(object[] fields)
@@ -54,8 +57,16 @@ namespace Hotel_booking
             conn.Open();
             SqlCommand cmd = new SqlCommand("SearchForInfo", conn);
 
-            // Вид Command является StoredProcedure
+
+            // Г‚ГЁГ¤ Command ГїГўГ«ГїГҐГІГ±Гї StoredProcedure
             cmd.CommandType = CommandType.StoredProcedure;
+
+
+            return 0;
+        }
+
+        public int Search()
+        {
 
             cmd.Parameters.Add("@CountryId", SqlDbType.Int).Value = fields[0];
             cmd.Parameters.Add("@NumberOfStars", SqlDbType.Int).Value = fields[1];
@@ -63,9 +74,15 @@ namespace Hotel_booking
             cmd.Parameters.Add("@Rating", SqlDbType.Int).Value = fields[3];
             cmd.Parameters.Add("@Sale", SqlDbType.Int).Value = fields[4];
 
-            // Выполнить процедуру.
+
+            // Г‚Г»ГЇГ®Г«Г­ГЁГІГј ГЇГ°Г®Г¶ГҐГ¤ГіГ°Гі.
             cmd.ExecuteNonQuery();
             object[] hotels = new object[1];
+
+
+            return 0;
+        }
+    }
 
             using (SqlDataReader rdr = cmd.ExecuteReader())
             {
@@ -79,4 +96,5 @@ namespace Hotel_booking
             return hotels[0];
         }
 	}
+
 }

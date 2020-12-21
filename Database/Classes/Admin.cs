@@ -1,10 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using hotel_booking.SqlConn;
 using System.Data.SqlClient;
 using System.Data;
-
 
 namespace Hotel_booking
 {
@@ -13,6 +12,7 @@ namespace Hotel_booking
         //input: id, permission
         //output: true if successful
         public bool ChangePermissions(int id, int permission)
+
 		{
             bool state;
             SqlConnection conn = DBConnConfig.GetDBConnection();

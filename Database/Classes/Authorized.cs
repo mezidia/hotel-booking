@@ -9,14 +9,15 @@ namespace Hotel_booking
 	{
 		// properties
 
-		protected string Email { get; set; }
-		protected string Login { get; set; }
-		protected string Password { get; set; }
+		public string Email { get; set; }
+		public string Login { get; set; }
+		public string Password { get; set; }
 
-		protected int Age { get; set; }
-		protected int PhoneNumber { get; set; }
-		protected int Country { get; set; }
-		protected int ID { get; set; }
+		public int Age { get; set; }
+		public int PhoneNumber { get; set; }
+		public int Country { get; set; }
+		public int ID { get; set; }
+		public int Permission { get; set; }
 
 		// methods
 
@@ -197,6 +198,16 @@ namespace Hotel_booking
 			SqlConnection conn = DBConnConfig.GetDBConnection();
 			conn.Open();
 
+			SqlCommand cmd = new SqlCommand("SetHotel", conn);
+
+			// Вид Command является StoredProcedure
+			cmd.CommandType = CommandType.StoredProcedure;
+			//cmd.Parameters.Add("@HotelID", SqlDbType.Int).Value = id;
+
+			// Выполнить процедуру.
+			cmd.ExecuteNonQuery();
+
+
 			try
 			{
 				SqlCommand cmd = new SqlCommand("SetHotel", conn);
@@ -223,10 +234,23 @@ namespace Hotel_booking
 				funcState = false;
 			}
 
+			//output recieved data
+			Console.WriteLine("country: " + HotelData[0]);
+			Console.WriteLine("owner id: " + HotelData[1]);
+			Console.WriteLine("number of stars: " + HotelData[2]);
+			Console.WriteLine("description: " + HotelData[3]);
+			Console.WriteLine("location: " + HotelData[4]);
+			Console.WriteLine("hotel type: " + HotelData[5]);
+			Console.WriteLine("rating: " + HotelData[6]);
+			Console.WriteLine("hotel name: " + HotelData[7]);
+			return true;
+
+
 			conn.Close();
 			conn.Dispose();
 
 			return funcState;
+
 		}
 	}
 }
