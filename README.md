@@ -97,8 +97,8 @@ Implementation of functions below is left for clients:
 
 Name    | Type     | Argument     | Default | Description
 --------|----------|--------------|---------|------------
-id | `int` | <required> | None  | user's identifier
-permission | `int` | <required> | None  | user's permission
+id | `int` | `required` | None  | user's identifier
+permission | `int` | `required` | None  | user's permission
 
 ### Authorized.cs
 
@@ -106,31 +106,31 @@ permission | `int` | <required> | None  | user's permission
 
 Name    | Type     | Argument     | Default | Description
 --------|----------|--------------|---------|------------
-bookfields | `object` | <required> | None  | information for booking
+bookfields | `object` | `required` | None  | information for booking
 
 #### CheckBookings(id)
 
 Name    | Type     | Argument     | Default | Description
 --------|----------|--------------|---------|------------
-id | `int` | <required> | None  | user's identifier
+id | `int` | `required` | None  | user's identifier
 
 #### Review(reviewfields)
 
 Name    | Type     | Argument     | Default | Description
 --------|----------|--------------|---------|------------
-reviewfields | `object` | <required> | None | information for creating review
+reviewfields | `object` | `required` | None | information for creating review
 
 #### CancelBooking(id)
 
 Name    | Type     | Argument     | Default | Description
 --------|----------|--------------|---------|------------
-id | `int` | <required> | None | books's identifier
+id | `int` | `required` | None | books's identifier
 
 #### AddHotel(hotelFields)
 
 Name    | Type     | Argument     | Default | Description
 --------|----------|--------------|---------|------------
-hotelFields | `object` | <required> | None | information about hotel
+hotelFields | `object` | `required` | None | information about hotel
 
 ### DBSystem.cs
 
