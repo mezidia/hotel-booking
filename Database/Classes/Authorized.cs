@@ -37,8 +37,8 @@ namespace Hotel_booking
 				cmd.Parameters.Add("@User", SqlDbType.Int).Value = bookfields[1];
 				cmd.Parameters.Add("@Room", SqlDbType.Int).Value = bookfields[2];
 				cmd.Parameters.Add("@Description_str", SqlDbType.NVarChar).Value = bookfields[3];
-				cmd.Parameters.Add("@StartDate", SqlDbType.DateTime).Value = hotelFields[4];
-				cmd.Parameters.Add("@EndDate", SqlDbType.DateTime).Value = hotelFields[5];
+				cmd.Parameters.Add("@StartDate", SqlDbType.DateTime).Value = bookfields[4];
+				cmd.Parameters.Add("@EndDate", SqlDbType.DateTime).Value = bookfields[5];
 
 				//exec procedure
 				cmd.ExecuteNonQuery();
@@ -95,10 +95,10 @@ namespace Hotel_booking
             conn.Close();
             conn.Dispose();
 
-            return UserData;
+            return UserBookings;
 		}
 
-		public void Review(object[] reviewfields)
+		public bool Review(object[] reviewfields)
 		{
 			bool funcState = false;
 
