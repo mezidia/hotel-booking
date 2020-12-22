@@ -174,9 +174,35 @@ fields | `object[]` | `required` | None | information about room
 
 ### HotelOwner.cs
 
+#### UpdateRoom(fields)
+
+Name    | Type     | Argument     | Default | Description
+--------|----------|--------------|---------|------------
+fields | `object[]` | `required` | None | information for updating room
+
+#### RemoveHotel(id)
+
+Name    | Type     | Argument     | Default | Description
+--------|----------|--------------|---------|------------
+id | `int` | `required` | None | information for removing hotel
+
 ### Unauthorized.cs
 
+#### SignUpLogIn(login, password)
+
+Name    | Type     | Argument     | Default | Description
+--------|----------|--------------|---------|------------
+login | `string` | `required` | None | user's login
+password | `string` | `required` | None | user's password
+
 ### User.cs
+
+#### SearchForInfo(fields)
+
+Name    | Type     | Argument     | Default | Description
+--------|----------|--------------|---------|------------
+fields | `object[]` | `required` | None | information for searching info
+
 
 ## Interested parties
 Below is given a list of parties, that may be interested in our project:
