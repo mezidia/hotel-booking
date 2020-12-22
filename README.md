@@ -134,7 +134,43 @@ hotelFields | `object[]` | `required` | None | information about hotel
 
 ### DBSystem.cs
 
+#### GetReviews(id)
+
+Name    | Type     | Argument     | Default | Description
+--------|----------|--------------|---------|------------
+id | `int` | `required` | None | review's identifier
+
+#### GetRoom(id)
+
+Name    | Type     | Argument     | Default | Description
+--------|----------|--------------|---------|------------
+id | `int` | `required` | None | room's identifier
+
+#### GetUser(id)
+
+Name    | Type     | Argument     | Default | Description
+--------|----------|--------------|---------|------------
+id | `int` | `required` | None | user's identifier
+
+#### GetHotel(id)
+
+Name    | Type     | Argument     | Default | Description
+--------|----------|--------------|---------|------------
+id | `int` | `required` | None | hotel's identifier
+
 ### HotelAdmin.cs
+
+#### UpdateHotelInfo(hotelFields)
+
+Name    | Type     | Argument     | Default | Description
+--------|----------|--------------|---------|------------
+hotelFields | `object[]` | `required` | None | information about hotel
+
+#### UpdateRoom(fields)
+
+Name    | Type     | Argument     | Default | Description
+--------|----------|--------------|---------|------------
+fields | `object[]` | `required` | None | information about room
 
 ### HotelOwner.cs
 
