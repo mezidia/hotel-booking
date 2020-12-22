@@ -35,7 +35,7 @@ Booking is an online travel agency for lodging reservations or, in other words, 
 ### Goal
 
 - make information about hotels more public and smart
-- make booking a room more easy
+- make booking a room easier
 
 ### Context
 
