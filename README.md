@@ -172,12 +172,6 @@ Name    | Type     | Argument     | Default | Description
 --------|----------|--------------|---------|------------
 fields | `object[]` | `required` | None | information about room
 
-#### UpdateRoom(fields)
-
-Name    | Type     | Argument     | Default | Description
---------|----------|--------------|---------|------------
-fields | `object[]` | `required` | None | information about room
-
 ### HotelOwner.cs
 
 ### Unauthorized.cs
