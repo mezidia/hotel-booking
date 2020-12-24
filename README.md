@@ -174,7 +174,7 @@ fields | `object[]` | `required` | None | information about room
 
 ### HotelOwner.cs
 
-#### UpdateRoom(fields)
+#### ChangeAccess(fields)
 
 Name    | Type     | Argument     | Default | Description
 --------|----------|--------------|---------|------------
@@ -192,8 +192,8 @@ id | `int` | `required` | None | information for removing hotel
 
 Name    | Type     | Argument     | Default | Description
 --------|----------|--------------|---------|------------
-login | `string` | `required` | None | user's login
-password | `string` | `required` | None | user's password
+login_str | `string` | `required` | None | user's login
+password_str | `string` | `required` | None | user's password
 
 ### User.cs
 
