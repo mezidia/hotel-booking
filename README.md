@@ -34,7 +34,7 @@ Our hotel booking project with databases
       - [ChangeAccess(fields)](#changeaccessfields)
       - [RemoveHotel(id)](#removehotelid)
     - [Unauthorized.cs](#unauthorizedcs)
-      - [SignUpLogIn(login_str, password_str)](#signuploginloginstr-passwordstr)
+      - [SignUpLogIn(login_str, password_str)](#signuploginlogin_str-password_str)
     - [User.cs](#usercs)
       - [SearchForInfo(fields)](#searchforinfofields)
 - [Interested parties](#interested-parties)
