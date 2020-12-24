@@ -188,7 +188,7 @@ id | `int` | `required` | None | information for removing hotel
 
 ### Unauthorized.cs
 
-#### SignUpLogIn(login, password)
+#### SignUpLogIn(login_str, password_str)
 
 Name    | Type     | Argument     | Default | Description
 --------|----------|--------------|---------|------------
