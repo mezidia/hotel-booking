@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Hotel_booking.Admin" Collapsed="true">
+    <Position X="6.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Database\Classes\Admin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel_booking.Authorized" Collapsed="true">
+    <Position X="6" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAgDCAAgABAAkAAQAAAAAIgAAACAACQAAAAAAA=</HashCode>
+      <FileName>Database\Classes\Authorized.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel_booking.DBSystem" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAABAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Database\Classes\DBSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel_booking.HotelAdmin" Collapsed="true">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAIBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Database\Classes\HotelAdmin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel_booking.HotelOwner" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Database\Classes\HotelOwner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel_booking.Unauthorized" Collapsed="true">
+    <Position X="3.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Database\Classes\Unauthorized.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel_booking.User" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Database\Classes\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
